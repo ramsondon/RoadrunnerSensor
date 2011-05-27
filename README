@@ -1,0 +1,11 @@
+The Roadrunner Sensor Project
+
+
+This Project is the Sensor Simulation Environment for the RoadrunnerAndroid Project.
+
+
+Requirements:
+	* nodejs
+	* optimist plugin for nodejs
+	* http plugin for nodejs
+
