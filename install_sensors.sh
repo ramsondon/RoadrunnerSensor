@@ -22,7 +22,7 @@ sudo mkdir $install_path
 # Install Files into Install Path
 sudo cp $lib/$simserver $install_path/$simserver
 sudo cp $lib/$simulator $install_path/$simulator
-if [-d $lib/$mod]; then	
+if [ -d $lib/$mod ]; then	
 	sudo cp -R $lib/$mod $install_path/$mod
 fi
 # autostart
