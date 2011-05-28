@@ -6,7 +6,7 @@
 # Starts node temperature sensors
 # Local Ports used: Beginning with 10000
 #
-# @param --debug start in local mode
+# @param --localhost start in local mode
 
 
 # Starts a new Screen and the Sensor Simulation Server inside
@@ -22,12 +22,11 @@ connect()
 }
 
 # Host Address
-#ip='172.16.102.224'
-#ip_debug='127.0.0.1'
-if [ "$1" = '--debug' ]; then
+# @param --debug use Local 
+if [ "$1" = '--localhost' ]; then
 	ip='127.0.0.1'
 else
-	ip='172.16.102.224'
+	ip=hostname -I
 fi
 
 # Sensor Simulation function definitions
