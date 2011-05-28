@@ -26,7 +26,7 @@ connect()
 if [ "$1" = '--localhost' ]; then
 	ip='127.0.0.1'
 else
-	ip=hostname -I
+	ip=`hostname -I`
 fi
 
 # Sensor Simulation function definitions
