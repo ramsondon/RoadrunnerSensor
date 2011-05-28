@@ -15,10 +15,8 @@
 # arg_5 = Initial Temperature Value
 connect()
 {
-	node=node
-	echo "${node} ${1} --ip ${2} --port ${3} --temp ${4} --value ${5}"
-	#screen -d -r 
-	${node} ${1} --ip ${2} --port ${3} --temp ${4} --value ${5} &
+	echo "node ${1} --ip ${2} --port ${3} --temp ${4} --value ${5}"
+	node ${1} --ip ${2} --port ${3} --temp ${4} --value ${5} &
 }
 
 # Host Address
