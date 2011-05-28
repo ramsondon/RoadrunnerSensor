@@ -13,6 +13,7 @@ simserver='temp_sensor.js'
 simulator='temperature.js'
 
 lib='lib'
+mod='node_modules'
 
 # Create Install Path
 sudo rm -rf $install_path
@@ -21,7 +22,7 @@ sudo mkdir $install_path
 # Install Files into Install Path
 sudo cp $lib/$simserver $install_path/$simserver
 sudo cp $lib/$simulator $install_path/$simulator
-
+sudo cp -R $lib/$mod $install_path/$mod
 
 # autostart
 if [ "$1" = "--autostart" ]; then	
