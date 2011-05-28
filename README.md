@@ -21,7 +21,9 @@ Install
 
 Sensors
 -------
+
 Every Sensor works with a specific Temperature measuring function. The initial value 15°C is common to all sensors and is added to the measuring results.
+	
 	1. `steady`: cos depending on system time (port 10000)
 	2. `critical`: a mixed algorithm using the steady, common and normaldistribution measuring depending on its state (25 samples) (port 10001)
 	3. `normaldistribution`: normal distributed measuring with central limit theorem normal distribution (port 10002)
