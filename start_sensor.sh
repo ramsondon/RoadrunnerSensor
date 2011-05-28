@@ -3,7 +3,8 @@
 # @author: Matthias Schmid
 # @date: 26.05.2011
 
-#start node temp sensor
+# Starts node temperature sensors
+# Local Ports used: Beginning with 10000
 
 
 # Starts a new Screen and the Sensor Simulation Server inside
