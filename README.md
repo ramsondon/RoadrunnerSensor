@@ -6,6 +6,9 @@ This Project is the Sensor Simulation Environment for the RoadrunnerAndroid and 
 
 Requirements
 ------------
+
+It is possible to run the `install_components.sh` to install all the required dependencies. But pay attention on already installed components via apt-get.
+
 	* nodejs
 	* optimist plugin for nodejs
 	* npm
