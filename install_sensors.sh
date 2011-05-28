@@ -22,8 +22,9 @@ sudo mkdir $install_path
 # Install Files into Install Path
 sudo cp $lib/$simserver $install_path/$simserver
 sudo cp $lib/$simulator $install_path/$simulator
-sudo cp -R $lib/$mod $install_path/$mod
-
+if [-d $lib/$mod]; then	
+	sudo cp -R $lib/$mod $install_path/$mod
+fi
 # autostart
 if [ "$1" = "--autostart" ]; then	
 	rm /etc/init.d/start_sensor.sh
