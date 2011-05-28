@@ -5,6 +5,8 @@
 
 # Starts node temperature sensors
 # Local Ports used: Beginning with 10000
+#
+# @param --debug start in local mode
 
 
 # Starts a new Screen and the Sensor Simulation Server inside

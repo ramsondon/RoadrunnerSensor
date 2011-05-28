@@ -25,6 +25,6 @@ sudo make install
 cd ..
 
 # install optimist
-sudo npm install optimist
-
+npm install optimist
+mv node_modules/ lib/
 
