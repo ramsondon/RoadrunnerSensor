@@ -29,7 +29,7 @@ else
 fi
 
 # Sensor Simulation function definitions
-sensor=('steady' 'critical' 'common')
+sensor=('steady' 'critical' 'normaldistribution' 'common')
 
 # Number of Sensors
 len=${#sensor[@]}
@@ -39,6 +39,5 @@ value=15
 # start all sensors
 for ((i=0 ; i<${len}; i++));
 do
-	echo connecting to ${server}
 	connect ${server} ${ip} 1000${i} ${sensor[$i]} ${value}
 done
