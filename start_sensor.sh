@@ -22,7 +22,7 @@ connect()
 }
 
 # Host Address
-# @param --debug use Local 
+# @param --localhost use Local 
 if [ "$1" = '--localhost' ]; then
 	ip='127.0.0.1'
 else
