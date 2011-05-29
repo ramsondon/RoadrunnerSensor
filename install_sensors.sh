@@ -11,6 +11,7 @@ install_path=/usr/share/roadrunner
 # Install File Definition
 simserver='temp_sensor.js'
 simulator='temperature.js'
+simtimesensor='time_sensor.js'
 
 lib='lib'
 mod='node_modules'
@@ -22,6 +23,7 @@ sudo mkdir $install_path
 # Install Files into Install Path
 sudo cp $lib/$simserver $install_path/$simserver
 sudo cp $lib/$simulator $install_path/$simulator
+sudo cp $lib/$simtimesensor $install_path/$simtimesensor
 if [ -d $lib/$mod ]; then	
 	sudo cp -R $lib/$mod $install_path/$mod
 fi
